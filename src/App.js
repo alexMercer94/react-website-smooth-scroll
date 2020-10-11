@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Home from './pages';
 
 const App = () => {
-  return (
-    <div>
-      <h1>hola</h1>
-    </div>
-  )
-}
+    return (
+        <Router>
+            <Home />
+        </Router>
+    );
+};
 
-export default App
+export default App;
